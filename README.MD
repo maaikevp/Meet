@@ -4,9 +4,9 @@ Meet is an app to locate great events
 User stories and scenarios for several features of the app:
 
 * Feature: Filter Events By City
- - User story: As an event attendee, I should be able to filter events based on the city or location, so that I can easily find events happening in my preferred area.
+   - User story: As an event attendee, I should be able to filter events based on the city or location, so that I can easily find events happening in my preferred area.
 
- - Scenario: User filters events by city
+   - Scenario: User filters events by city
     Given the user is on the event listing page
     When the user selects the city "Berlin"
     Then the displayed events should be filtered to show only events in Berlin
