@@ -24,36 +24,36 @@ User stories and scenarios for several features of the app:
 
 
 * Feature:  Specify Number of Events:
-       - User story: As an user browsing event listings, I should be able to specify the maximum number of events displayed on a single page, so that I have a manageable list to browse             or don't have to click 'next page' too often.
+   - User story: As an user browsing event listings, I should be able to specify the maximum number of events displayed on a single page, so that I have a manageable list to browse             or don't have to click 'next page' too often.
 
-       - Scenario: User specifies maximum events per page
+   - Scenario: User specifies maximum events per page
           Given the User is configuring the app settings
           When the User sets the maximum events per page to 10
           Then the event listing page should display a maximum of 10 events
 
 
 * Feature: Use the App When Offline
-       - User story: As a frequent traveler or someone with intermittent internet access, I should be able to use the app even when offline, so that I can access event information                without relying on an active internet connection.
+   - User story: As a frequent traveler or someone with intermittent internet access, I should be able to use the app even when offline, so that I can access event information                without relying on an active internet connection.
 
-       - Scenario: User accesses event information offline
+   - Scenario: User accesses event information offline
           Given the user has previously loaded event data
           When the user opens the app without an internet connection
           Then the app should display cached event information
 
 
 * Feature: Add an App Shortcut to the Home Screen
-       - User story: As a mobile user, I should be able to add a shortcut to the app on my home screen, so that I can quickly launch it without navigating through other apps or menus.
+   - User story: As a mobile user, I should be able to add a shortcut to the app on my home screen, so that I can quickly launch it without navigating through other apps or menus.
 
-       - Scenario: User adds app shortcut
+   - Scenario: User adds app shortcut
           Given the user is using a mobile device
           When the user adds the app to their home screen
           Then a shortcut icon should appear for quick access
 
 
 * Feature: Display Charts Visualizing Event Details
-       - User story: As a clued up user, I should be able to view visual charts or graphs that summarize event data (such as attendance, ticket sales, or popularity), so that I can make          informed decisions related to planning of visits, especially to areas with higher event counts.
+   - User story: As a clued up user, I should be able to view visual charts or graphs that summarize event data (such as attendance, ticket sales, or popularity), so that I can make          informed decisions related to planning of visits, especially to areas with higher event counts.
 
-       - Scenario: Event analytics user views event summary charts
+   - Scenario: Event analytics user views event summary charts
           Given the user is interested in area-specific events or specific kind of events
           When the user navigates to the analytics section
           Then visual charts summarizing event data should be displayed
