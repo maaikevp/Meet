@@ -3,7 +3,7 @@ Meet is an app to locate great events
 
 User stories and scenarios for several features of the app:
 
-- Feature: Filter Events By City
+* Feature: Filter Events By City
  - User story: As an event attendee, I should be able to filter events based on the city or location, so that I can easily find events happening in my preferred area.
 
  - Scenario: User filters events by city
@@ -12,7 +12,7 @@ User stories and scenarios for several features of the app:
     Then the displayed events should be filtered to show only events in Berlin
 
 
-- Feature: Show/Hide Event Details
+* Feature: Show/Hide Event Details
  - User story: As a user browsing event listings, I should be able to toggle the visibility of event details (such as date, time, venue, and description), so that I can quickly scan through events without overwhelming event information.
 
  - Scenario: User toggles event details visibility
@@ -23,7 +23,7 @@ User stories and scenarios for several features of the app:
     Then the event details should be hidden
 
 
-- Feature:  Specify Number of Events:
+* Feature:  Specify Number of Events:
  - User story: As an user browsing event listings, I should be able to specify the maximum number of events displayed on a single page, so that I have a manageable list to browse or don't have to click 'next page' too often.
 
  - Scenario: User specifies maximum events per page
@@ -32,7 +32,7 @@ User stories and scenarios for several features of the app:
     Then the event listing page should display a maximum of 10 events
 
 
-- Feature: Use the App When Offline
+* Feature: Use the App When Offline
  - User story: As a frequent traveler or someone with intermittent internet access, I should be able to use the app even when offline, so that I can access event information without relying on an active internet connection.
 
  - Scenario: User accesses event information offline
@@ -41,7 +41,7 @@ User stories and scenarios for several features of the app:
     Then the app should display cached event information
 
 
-- Feature: Add an App Shortcut to the Home Screen
+* Feature: Add an App Shortcut to the Home Screen
  - User story: As a mobile user, I should be able to add a shortcut to the app on my home screen, so that I can quickly launch it without navigating through other apps or menus.
 
  - Scenario: User adds app shortcut
@@ -50,7 +50,7 @@ User stories and scenarios for several features of the app:
     Then a shortcut icon should appear for quick access
 
 
-- Feature: Display Charts Visualizing Event Details
+* Feature: Display Charts Visualizing Event Details
  - User story: As a clued up user, I should be able to view visual charts or graphs that summarize event data (such as attendance, ticket sales, or popularity), so that I can make informed decisions related to planning of visits, especially to areas with higher event counts.
 
  - Scenario: Event analytics user views event summary charts
