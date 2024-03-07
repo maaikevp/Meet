@@ -13,9 +13,9 @@ User stories and scenarios for several features of the app:
 
 
 * Feature: Show/Hide Event Details
-       - User story: As a user browsing event listings, I should be able to toggle the visibility of event details (such as date, time, venue, and description), so that I can quickly             scan through events without overwhelming event information.
+   - User story: As a user browsing event listings, I should be able to toggle the visibility of event details (such as date, time, venue, and description), so that I can quickly             scan through events without overwhelming event information.
 
-       - Scenario: User toggles event details visibility
+   - Scenario: User toggles event details visibility
           Given the user is viewing an event listing
           When the user clicks the "Show Details" button
           Then the event details (date, time, venue, description) should be visible
