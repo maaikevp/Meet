@@ -58,3 +58,9 @@ User stories and scenarios for several features of the app:
     When the user navigates to the analytics section
     Then visual charts summarizing event data should be displayed
 
+
+
+This app uses both serverless architecture and Open authorization (with Google):
+
+- Serverless: is easy to scale, always available, cost-effective
+- OAuth with google: sign-in with safe provider to access protected content, making use of their existing infrastructure 
