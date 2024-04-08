@@ -6,10 +6,11 @@ import NumberOfEvents from '../components/NumberOfEvents';
 import { waitFor } from "@testing-library/react"; // had to added to get 'queryByText' right - otherwise it couldn't read the data
 
 
+
 describe('<NumberOfEvents /> component', () => {
     let NumberOfEventsComponent;
     beforeEach(() => {
-        NumberOfEventsComponent = render(<NumberOfEvents />);
+        NumberOfEventsComponent = render(<NumberOfEvents setCurrentNOE={() => { }} />);
     })
 
     test('NumberOfEvents component contains an element with role of textbox', () => {

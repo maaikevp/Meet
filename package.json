@@ -51,5 +51,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "jest-cucumber": "^4.1.0",
+    "puppeteer": "^22.6.3"
   }
 }
