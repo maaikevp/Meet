@@ -70,6 +70,7 @@ export const getEvents = async () => {
 
     if (token) {
         removeQuery();
+        // eslint-disable-next-line
         const url = "https://0sntrgtwpa.execute-api.eu-central-1.amazonaws.com/dev/api/get-events" + "/" + token;
         const response = await fetch(url);
         const result = await response.json();
@@ -97,6 +98,7 @@ const removeQuery = () => {
 const getToken = async (code) => {
     const encodeCode = encodeURIComponent(code);
     const response = await fetch(
+        // eslint-disable-next-line
         'https://0sntrgtwpa.execute-api.eu-central-1.amazonaws.com/dev/api/token' + '/' + encodeCode
     );
     const { access_token } = await response.json();
