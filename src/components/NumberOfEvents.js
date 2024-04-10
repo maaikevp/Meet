@@ -1,9 +1,9 @@
 import { useState } from "react";
 
 
-const NumberOfEvents = ({ setCurrentNOE }) => {
 
-    // const [currentNOE, setCurrentNOE] = useState("");   // added myself
+const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
+
     const [query, setQuery] = useState("32");
 
 
@@ -11,7 +11,19 @@ const NumberOfEvents = ({ setCurrentNOE }) => {
         const value = event.target.value;
         setQuery(value);
         setCurrentNOE(value);
-    }
+        // setErrorAlert('');
+
+        if (isNaN(value)) {
+            setErrorAlert('Only numbers are allowed');
+        } else if (value <= 0) {
+            setErrorAlert("Only positive numbers are allowed");
+        } else {
+
+            setCurrentNOE(value);
+        }
+
+
+    };
 
     return (
         <div id="number-of-events">

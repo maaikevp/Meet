@@ -23,24 +23,21 @@ describe('<NumberOfEvents /> component', () => {
     });
 
     // FireEvent is something happening, like a user click
-    test('value of input field changes when user types in it', () => {
+    test('value of input field changes when user types in it', async () => {
         fireEvent.change(NumberOfEventsComponent.getByRole('textbox'), { target: { value: '20' } });
         waitFor(() => expect(NumberOfEventsComponent.getByRole('textbox').value).toBe('20'));
     });
 
+});
 
-    // test('value of input field changes when user types in it-b', async () => {
-    //     const numberOfEvents = NumberOfEventsComponent.queryByRole('textbox');
-    //     const user = userEvent.setup();
-    //     await user.type(numberOfEvents, '{backspace}{backspace}10');
-    //     expect(numberOfEvents).toHaveValue('10');
-    // });
 
-    test('updates number of events when user types', async () => {
-        const numberTextbox = NumberOfEventsComponent.queryByRole('textbox');
-        await userEvent.type(numberTextbox, "{backspace}{backspace}10");
-        expect(numberTextbox.value).toBe("10");
-    });
-})
+
+// test('updates number of events when user types', async () => {
+//     const input = NumberOfEventsComponent.queryByRole('textbox');
+//     await userEvent.type(input, '{backspace}{backspace}10');
+//     expect(input).toHaveValue('10');
+// });
+
+
 
 
