@@ -18,11 +18,9 @@ const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
         } else if (value <= 0) {
             setErrorAlert("Only positive numbers are allowed");
         } else {
-            setErrorAlert('')
-            setCurrentNOE(value);
+            setErrorAlert("")
         }
-
-
+        setCurrentNOE(value);
     };
 
     return (
