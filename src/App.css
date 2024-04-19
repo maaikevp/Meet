@@ -90,8 +90,6 @@ input[type="number"] {
 
 
 
-
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -118,6 +116,24 @@ input[type="number"] {
   z-index: 1000;
 }
 
+.charts-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+  .charts-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #event-list {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+  
 
 /* .App-link {
   color: #61dafb;
