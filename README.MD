@@ -72,4 +72,4 @@ User stories and scenarios for several features of the app:
           **Then** visual charts summarizing event data should be displayed
 
 
-
+![Meet-app-screenshot](Meet-app-screenshot.jpg)
