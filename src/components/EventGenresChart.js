@@ -11,15 +11,6 @@ const EventGenresChart = ({ allLocations, events }) => {
         setData(getData());
     }, [`${events}`]);
 
-    // const getData = () => {
-    //     const data = allLocations?.map((summary) => {
-    //         item key = { event.id }
-    //         const filteredEvents = events.filter(event => event.summary.includes(genre));
-    //         return {
-    //             name: genre,
-    //             value: filteredEvents.length
-    //         }
-    //     });
 
     const getData = () => {
         const data = genres.map((genre) => {
@@ -53,12 +44,8 @@ const EventGenresChart = ({ allLocations, events }) => {
         ) : null;
     };
 
-    // const colors = ['#DD0000', '#00DD00', '#0000DD', '#DDDD00', '#DD00DD'];
-    // const colors = ['#C1E7E3', '#2F387B', '#D394A9', '#A07F9E', '#826BA8'];
-    // const colors = ['#003F5C', '#58508D', '#BC5090', '#FF6361', '#FFA600'];
 
     const colors = ['#FEAE65', '#E6F69D', '#AADEA7', '#64C2A6', '#2D87BB'];
-
 
 
     return (
@@ -82,3 +69,12 @@ const EventGenresChart = ({ allLocations, events }) => {
 };
 
 export default EventGenresChart;
+
+
+
+
+
+//  Old colours:
+// const colors = ['#DD0000', '#00DD00', '#0000DD', '#DDDD00', '#DD00DD'];
+// const colors = ['#C1E7E3', '#2F387B', '#D394A9', '#A07F9E', '#826BA8'];
+// const colors = ['#003F5C', '#58508D', '#BC5090', '#FF6361', '#FFA600'];
